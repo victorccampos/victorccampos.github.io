@@ -1,5 +1,6 @@
 // Main navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
+    
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -10,43 +11,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                targetElement.scrollIntoView({
+                // Adjustment for the sticky nav height
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
                     behavior: 'smooth'
                 });
             }
         });
     });
 
-    // Mobile menu toggle (if you add one later)
-    const mobileMenuButton = document.querySelector('.mobile-menu-button');
-    if (mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', function() {
-            const nav = document.querySelector('nav ul');
-            nav.classList.toggle('active');
+    // Add active styling logic if needed for scrolling
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const navHeight = document.querySelector('nav').offsetHeight;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - navHeight - 10) {
+                current = section.getAttribute('id');
+            }
         });
-    }
 
-    // Add active class to current navigation item
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('nav ul li a').forEach(link => {
-        const linkPage = link.getAttribute('href').split('/').pop() || 'index.html';
-        if (linkPage === currentPage) {
-            link.classList.add('active');
-        }
+        navLinks.forEach(link => {
+            link.style.color = '#ffffff'; // Reset
+            if (link.getAttribute('href').includes(current) && current !== '') {
+                link.style.color = 'var(--accent-color)';
+            }
+        });
     });
-
-    // Project page specific functionality
-    if (window.location.pathname.includes('projects/')) {
-        // Add any project-specific JavaScript here
-        console.log('Project page loaded');
-    }
 });
-
-// Function to handle Power BI dashboard embedding
-function embedPowerBIDashboard() {
-    // This would be replaced with actual Power BI embedding code
-    console.log('Power BI dashboard embedded');
-}
-
-// Initialize any additional components
-document.addEventListener('DOMContentLoaded', embedPowerBIDashboard);
