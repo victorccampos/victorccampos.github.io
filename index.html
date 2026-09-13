@@ -1,228 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Portfólio de Dados | João Victor Campos Costa</title>
-      
-    <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/fa-solid:project-diagram.svg?color=%23e87a2d">
+
+    <link rel="icon" type="image/svg+xml"
+        href="https://api.iconify.design/fa-solid:project-diagram.svg?color=%23e87a2d">
     <link rel="apple-touch-icon" href="/favicon-32x32.png">
-    
+
     <!-- Google Fonts: Playfair Display (Editorial Serif) e Lato (Clean Sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!-- NAVIGATION (Dark Editorial Bar) -->
-<nav>
-    <div class="container nav-container">
-        <div class="nav-brand">
-            <i class="fas fa-project-diagram"></i> <span>JoãoVictor<span class="brand-highlight">campos</span></span>
-        </div>
-        <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/joaovictorcamposcosta" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/victorccampos" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/@joaovictorcampos5837" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="assets/Joao_Victor_Campos_Costa_curriculo.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
-        </div>
-    </div>
-</nav>
-
-<!-- HEADER / HERO SECTION (Editorial Article Style) -->
-<header id="about" class="section hero-section">
-    <div class="container">
-        <div class="editorial-header">
-            <span class="kicker">Data Science & Analytics</span>
-            <h1>Transformando Dados Complexos em Decisões Estratégicas</h1>
-            <p class="abstract">A interseção entre a análise e ciência de dados, inteligência artificial e o rigor da pesquisa científica para solucionar problemas complexos e revelar padrões ocultos.</p>
-            <div class="author-line">
-                <span class="author-name">— Por JOÃO VICTOR CAMPOS COSTA</span>
+    <!-- NAVIGATION (Dark Editorial Bar) -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-project-diagram"></i> <span>JoãoVictor<span
+                        class="brand-highlight">campos</span></span>
+            </div>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joaovictorcamposcosta" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/victorccampos" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@joaovictorcampos5837" target="_blank" title="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="assets/Joao_Victor_Campos_Costa_curriculo.pdf" download title="Download CV"><i
+                        class="fas fa-file-arrow-down"></i></a>
             </div>
         </div>
+    </nav>
 
-        <div class="about-content">
-            <img src="assets/images/foto_git.jpg" alt="João Victor Campos" class="profile-photo">
-            <div class="about-text">
-                <p>Sou um profissional de dados com uma base sólida em modelagem físico-matemática e métodos computacionais avançados. O rigor analítico que aplico na avaliação de propriedades estruturais, dinâmicas moleculares e no treinamento de redes neurais para materiais é a mesma lente que utilizo para extrair valor de bases de dados de negócios e instituições.</p>
-                <p>Com domínio em Python, SQL, ferramentas de Business Intelligence (Power BI) e integração de APIs de Inteligência Artificial Generativa, foco na construção de pipelines de ETL consistentes, dashboards interativos e aplicações de dados que apoiam diretamente a tomada de decisão estruturada.</p>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section bg-light">
-    <div class="container">
-        <div class="section-heading">
-            <h2>Projetos em Destaque</h2>
-            <p>Estudos de caso e aplicações de análise, engenharia de dados e IA.</p>
-        </div>
-        
-        <div class="projects-grid">
-            <!-- Project 1 -->
-             <div class="project-card">
-                <img src="assets/images/dashboard_showcase.gif" alt="Dashboard Corpo Discente">
-                <div class="project-card-content">
-                    <span class="kicker">Business Intelligence</span>
-                    <h3>Dashboard do Corpo Discente Física UFMG</h3>
-                    <p>Análise de dados públicos para mapear o perfil discente da Pós-Graduação. O dashboard responde a métricas-chave como distribuição por modalidade, área de concentração, agências de fomento e tendências de entrada/saída, auxiliando a tomada de decisão institucional.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Jupyter</span><span>Power BI</span><span>Git</span>
-                    </div>
-                    <div class="project-buttons">
-                        <a href="#" target="_blank" class="editorial-link">Ver Dashboard <i class="fas fa-arrow-right"></i></a>
-                    </div>
+    <!-- HEADER / HERO SECTION (Editorial Article Style) -->
+    <header id="about" class="section hero-section">
+        <div class="container">
+            <div class="editorial-header">
+                <span class="kicker">Data Science & Analytics</span>
+                <h1>Transformando Dados Complexos em Decisões Estratégicas</h1>
+                <p class="abstract">A interseção entre a data science & analytics com o cultura da pesquisa científica
+                    para solucionar problemas de negócio e revelar padrões.</p>
+                <div class="author-line">
+                    <span class="author-name">— Por JOÃO VICTOR CAMPOS COSTA</span>
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/images/spotify-streamlit-shocase.gif" alt="Spotify Wrapped">
-                <div class="project-card-content">
-                    <span class="kicker">Data Visualization</span>
-                    <h3>Spotify Wrapped Home Made</h3>
-                    <p>Aplicação interativa desenvolvida com Streamlit que consome dados temporais do Spotify para gerar uma análise personalizada anual. Identifica o top 10 artistas, tempo mensal de escuta, distribuição por dias da semana e períodos do dia de maior concentração.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Streamlit</span><span>Data Analysis</span>
-                    </div>
-                    <div class="project-buttons">
-                        <a href="https://portfolio-dados-spotify-victorjvc.streamlit.app/" target="_blank" class="editorial-link">Acessar App <i class="fas fa-arrow-right"></i></a>
-                    </div>
+            <div class="about-content">
+                <img src="assets/images/foto_git.jpg" alt="João Victor Campos" class="profile-photo">
+                <div class="about-text">
+                    <p>Sou formado e mestrando em Física pela UFMG o que muito colaborou para o enriquecimento do meu raciocínio lógico e
+                        da minha capacidade analítica. Do mestrado em especial, herdei a construção de uma boa comunicação oral e escrita,
+                        e organização e atenção aos detalhes. Além disso, cultivei o hábito de documentar não apenas os
+                        resultados, mas também a construção do conhecimento, pois isso torna minhas análises mais
+                        reprodutíveis, facilita a comunicação técnica e permite que o conhecimento produzido seja
+                        aproveitado e desenvolvido por outras pessoas do ambiente de trabalho em que estou inserido.
+                        Dito isso, torna-se claro o meu interesse em trabalhar com equipes multi-área na resolução de
+                        problemas.
+                    </p>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <!-- Project 3 -->
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Projetos em Destaque</h2>
+                <p>Estudos de caso e aplicações</p>
+            </div>
 
-
-            <div class="project-card">
-                <img src="assets/images/arxiv_jvc_newsletter.png" alt="arXiv Newsletter">
-                <div class="project-card-content">
-                    <span class="kicker">Generative AI & NLP</span>
-                    <h3>arXiv Newsletter Pessoal</h3>
-                    <p>Pipeline de automação que filtra literatura científica diária. Utiliza a API do Google Gemini (gemini-3.5-flash-lite) e técnicas de NLP para avaliar preprints da categoria cond-mat.mtrl-sci no arXiv e recomendar os 3 artigos mais alinhados ao meu contexto de pesquisa.</p>
-                    <div class="tech-stack">
-                        <span>Generative AI Studio</span><span>NLP</span><span>Gemini API</span>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="assets/images/dashboard_showcase.gif" alt="Dashboard Corpo Discente">
+                    <div class="project-card-content">
+                        <span class="kicker">Business Intelligence</span>
+                        <h3>Dashboard do Corpo Discente Física UFMG</h3>
+                        <p>Análise de dados públicos para mapear o perfil discente da Pós-Graduação. O dashboard
+                            responde a métricas-chave como distribuição por modalidade, área de concentração, agências
+                            de fomento e tendências de entrada/saída, auxiliando a tomada de decisão institucional.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Jupyter</span><span>Power BI</span><span>Git</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" target="_blank" class="editorial-link">Ver Dashboard <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <a href="https://github.com/victorccampos/arxiv-newsletter" target="_blank" class="editorial-link">Ver Repositório <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="assets/images/spotify-streamlit-shocase.gif" alt="Spotify Wrapped">
+                    <div class="project-card-content">
+                        <span class="kicker">Data Visualization</span>
+                        <h3>Spotify Wrapped Home Made</h3>
+                        <p>Aplicação interativa desenvolvida com Streamlit que consome dados temporais do Spotify para
+                            gerar uma análise personalizada anual. Identifica o top 10 artistas, tempo mensal de escuta,
+                            distribuição por dias da semana e períodos do dia de maior concentração.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Streamlit</span><span>Data Analysis</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://portfolio-dados-spotify-victorjvc.streamlit.app/" target="_blank"
+                                class="editorial-link">Acessar App <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+
+
+                <div class="project-card">
+                    <img src="assets/images/arxiv_jvc_newsletter.png" alt="arXiv Newsletter">
+                    <div class="project-card-content">
+                        <span class="kicker">Generative AI & NLP</span>
+                        <h3>arXiv Newsletter Pessoal</h3>
+                        <p>Pipeline de automação que filtra literatura científica diária. Utiliza a API do Google Gemini
+                            (gemini-3.5-flash-lite) e técnicas de NLP para avaliar preprints da categoria
+                            cond-mat.mtrl-sci no arXiv e recomendar os 3 artigos mais alinhados ao meu contexto de
+                            pesquisa.</p>
+                        <div class="tech-stack">
+                            <span>Generative AI Studio</span><span>NLP</span><span>Gemini API</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/victorccampos/arxiv-newsletter" target="_blank"
+                                class="editorial-link">Ver Repositório <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- SKILLS SECTION -->
-<section id="skills" class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>Tech Hard-Skills</h2>
-            <p>Ferramentas e tecnologias utilizadas para transformar os dados em conhecimento.</p>
-        </div>
-        
-        <div class="skills-table">
-            <!-- Column 1 -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>Data Visualization</h3>
-                </div>
-                <ul class="skill-list">
-                    <li>Power BI</li>
-                    <li>Streamlit</li>
-                    <li>Matplotlib / Seaborn</li>
-                    <li>Excel Dashboards</li>
-                </ul>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Tech Hard-Skills</h2>
+                <p>Ferramentas e tecnologias utilizadas para transformar os dados em conhecimento.</p>
             </div>
 
-            <!-- Column 2 -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Data Analysis & AI</h3>
+            <div class="skills-table">
+                <!-- Column 1 -->
+                <div class="skill-column">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Data Visualization</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Power BI</li>
+                        <li>Streamlit</li>
+                        <li>Matplotlib / Seaborn</li>
+                    </ul>
                 </div>
-                <ul class="skill-list">
-                    <li>Python (Pandas, NumPy)</li>
-                    <li>Jupyter Notebook</li>
-                    <li>Generative AI & NLP</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
 
-            <!-- Column 3 -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-database"></i>
-                    <h3>Data Modeling & ETL</h3>
+                <!-- Column 2 -->
+                <div class="skill-column">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Data Analysis & AI</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>SQL</li>
+                        <li>Generative AI</li>
+                    </ul>
                 </div>
-                <ul class="skill-list">
-                    <li>Extração e Limpeza de Dados</li>
-                    <li>Power Query (M) / DAX</li>
-                    <li>Versionamento (Git/GitHub)</li>
-                    <li>Modelagem Relacional</li>
-                </ul>
+
+                <!-- Column 3 -->
+                <div class="skill-column">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Modeling & ETL</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Versionamento (Git/GitHub)</li>
+                        <li>Extração e Limpeza de Dados</li>
+                        <li>Modelagem Relacional</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CONTACT FORM SECTION -->
-<section id="contact" class="section bg-light">
-    <div class="container">
-        <div class="section-heading">
-            <h2>Entre em contato comigo</h2>
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Entre em contato comigo</h2>
+            </div>
+
+            <form action="https://formsubmit.co/5561facbae640cc41129b385116565bc" method="POST" class="contact-form">
+                <input type="hidden" name="_next" value="https://victorccampos.github.io/">
+                <p class="form-intro">Interessado em colaboração para projetos de dados, análise estratégica ou
+                    desenvolvimento de dashboards? Entre em contato.</p>
+
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" name="_subject" id="assunto" placeholder="Assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6" placeholder="Sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
         </div>
-        
-        <form action="https://formsubmit.co/5561facbae640cc41129b385116565bc" method="POST" class="contact-form">
-    <input type="hidden" name="_next" value="https://victorccampos.github.io/">
-    <p class="form-intro">Interessado em colaboração para projetos de dados, análise estratégica ou desenvolvimento de dashboards? Entre em contato.</p>
+    </section>
 
-    
-    <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
-    </div>
-    <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
-    </div>
-    <div class="form-group">
-        <label for="assunto">Assunto</label>
-        <input type="text" name="_subject" id="assunto" placeholder="Assunto" required>
-    </div>
-    <div class="form-group">
-        <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" rows="6" placeholder="Sua mensagem" required></textarea>
-    </div>
-    
-    <button type="submit" class="btn">Enviar Mensagem</button>
-</form>
-    </div>
-</section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 João Victor Campos Costa. All rights reserved.</p>
+        </div>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p>&copy; 2026 João Victor Campos Costa. All rights reserved.</p>
-    </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
